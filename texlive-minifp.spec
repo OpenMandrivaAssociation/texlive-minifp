@@ -1,12 +1,12 @@
-# revision 31221
+# revision 32559
 # category Package
 # catalog-ctan /macros/generic/minifp
-# catalog-date 2013-07-17 00:21:06 +0200
+# catalog-date 2014-01-04 14:18:29 +0100
 # catalog-license lppl1.3
-# catalog-version 0.95
+# catalog-version 0.96
 Name:		texlive-minifp
-Version:	0.95
-Release:	5
+Version:	0.96
+Release:	1
 Summary:	Fixed-point real computations to 8 decimals
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/minifp
