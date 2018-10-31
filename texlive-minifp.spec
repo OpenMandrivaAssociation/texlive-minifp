@@ -6,7 +6,7 @@
 # catalog-version 0.96
 Name:		texlive-minifp
 Version:	0.96
-Release:	5
+Release:	6
 Summary:	Fixed-point real computations to 8 decimals
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/minifp
