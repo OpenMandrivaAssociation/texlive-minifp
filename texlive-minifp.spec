@@ -1,19 +1,13 @@
-# revision 32559
-# category Package
-# catalog-ctan /macros/generic/minifp
-# catalog-date 2014-01-04 14:18:29 +0100
-# catalog-license lppl1.3
-# catalog-version 0.96
 Name:		texlive-minifp
-Version:	0.96
-Release:	6
+Version:	32559
+Release:	1
 Summary:	Fixed-point real computations to 8 decimals
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/minifp
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ decimal places. In addition, the package provides a stack-based
 programing environment.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,8 @@ programing environment.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
