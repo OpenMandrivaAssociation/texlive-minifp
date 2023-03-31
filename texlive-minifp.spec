@@ -1,6 +1,6 @@
 Name:		texlive-minifp
 Version:	32559
-Release:	1
+Release:	2
 Summary:	Fixed-point real computations to 8 decimals
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/minifp
