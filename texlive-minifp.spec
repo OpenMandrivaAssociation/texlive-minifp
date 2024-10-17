@@ -3,7 +3,7 @@ Version:	32559
 Release:	2
 Summary:	Fixed-point real computations to 8 decimals
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/minifp
+URL:		https://www.ctan.org/tex-archive/macros/generic/minifp
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/minifp.doc.r%{version}.tar.xz
